@@ -1,10 +1,10 @@
-var ConquerRome = ConquerRome || {};
+var SpaceHipster = SpaceHipster || {};
 
-ConquerRome.game = new Phaser.Game(160, 160, Phaser.AUTO, '');
+SpaceHipster.game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, '');
 
-ConquerRome.game.state.add('Boot', ConquerRome.Boot);
-ConquerRome.game.state.add('Preload', ConquerRome.Preload);
-//ConquerRome.game.state.add('MainMenu', ConquerRome.MainMenu);
-ConquerRome.game.state.add('Game', ConquerRome.Game);
+SpaceHipster.game.state.add('Boot', SpaceHipster.Boot);
+SpaceHipster.game.state.add('Preload', SpaceHipster.Preload);
+SpaceHipster.game.state.add('MainMenu', SpaceHipster.MainMenu);
+SpaceHipster.game.state.add('Game', SpaceHipster.Game);
 
-ConquerRome.game.state.start('Boot');
+SpaceHipster.game.state.start('Boot');
